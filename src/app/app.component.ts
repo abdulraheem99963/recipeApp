@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-poc-recipe-app';
+
+  componentSelected: string = 'recipe';
+
+  onComponentSelected(compSelected: string){
+
+   this.componentSelected=compSelected;
+
+  }
 }
